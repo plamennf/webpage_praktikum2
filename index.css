@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Roboto Mono";
+    src: url('RobotoMono-Regular.ttf');
+    src: url('RobotoMono-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #A47864;
+}
+
+h1 {
+    font-family: "Roboto Mono", Calibri, Tahoma, sans-serif;
+    color: #FFDD44;
+}
+
+p {
+    font-family: "Roboto Mono", Calibri, Tahoma, sans-serif;
+    color: #FFFFFF;
+}
+
+.cppimg {
+    width: 1%;
+    height: 1%;
+}
+
+.csharpimg {
+    width: 2.5%;
+    height: 2.5%;
+    margin-left: -0.5%;
+}
+
+.pythonimg {
+    width: 1.2%;
+    height: 1.2%;
+}
+
+.htmlcssjsimg {
+    width: 1%;
+    height: 1%;
+}
