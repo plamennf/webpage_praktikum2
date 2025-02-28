@@ -5,47 +5,42 @@
   <title>My Portfolio</title>
 </head>
 <body>
-  <h1>Personal Information</h1>
-  <p>My name is Plamen Nikolov.</p>
-  <p>I am 19-years old and a 1st year student in Technical University of Sofia.
-    <a href="https://www.tu-sofia.bg/" class="tusofiaref">
-      <img src="tusofia.png" class="tusofiaimg"/>
-    </a>
-  </p>
-  <h1>Past Experience</h1>
-  <p>
-    3 years programming in C++
-    <a href="https://en.wikipedia.org/wiki/C%2B%2B" class="cppref">
-      <img src="cpp.png" class="cppimg"/>
-    </a>
-  </p>
-  <p>
-    3 years programming in C#
-    <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">
-      <img src="csharp.png" class="csharpimg"/>
-    </a>
-  </p>
-  <p>
-    Beginner in Python
-    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">
-      <img src="python.png" class="pythonimg"/>
-    </a>
-  </p>
-  <p>Beginner in HTML, CSS and JavaScript
-    <a href="https://hackernoon.com/a-beginners-guide-to-html-css-and-javascript">
-       <img src="htmlcssjs.png" class="htmlcssjsimg"/>
-    </a>
-  </p>
-  <h1>Projects</h1>
-  <p><a href="https://github.com/plamennf/rsc">Simple build system for C++</a></p>
-  <p><a href="https://github.com/plamennf/vacation-tracker">Program, which checks for overlapping vacation days for employees</a></p>
-  <p><a href="https://github.com/SINEOKBYALDRAKON/fashionsiteproject">Clothes shopping website, which I made with 2 colleagues and I did the majority of the backend</a></p>
-  <h1>Contact Info</h1>
-  <p>E-Mail: plamennikolov777@gmail.com</p>
-  <p>University E-Mail: plamenfnikolov@tu-sofia.bg</p>
-  <p>Github
-    <a href="https://github.com/" class="githubref">
-      <img src="github.png" class="githubimg"/>
-    </a>: <a href="https://github.com/plamennf">https://github.com/plamennf</a></p>
+  <div class="content">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="contact.html">Contact Info</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="settings.html">Settings</a></li>
+  </ul>
+
+  <div class="slideshow-container">
+      <img class="slide active" src="sw1.png" style="width:100%">
+      <img class="slide" src="sw2.png" style="width:100%">
+      <img class="slide" src="sw3.png" style="width:100%">
+  </div>
+
+  <script src="index.js"></script>
+  
+  <div class="video-container">
+    <video width="640" height="480" controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="container">
+    <div class="center">
+      <a href="portfolio.html" style="text-decoration:none">
+        <button class="mypb" type="button">My Projects</button>
+      </a>
+    </div>
+  </div>
+  
+  </div>
+  
+  <footer class="footer">
+    <p>&copy; 2025 My Website | All Rights Reserved</p>
+  </footer>
 </body>
-</head>

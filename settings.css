@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "Roboto Mono";
+    src: url('RobotoMono-Regular.ttf');
+    src: url('RobotoMono-Regular.ttf') format('truetype');
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+body {
+    /*background-color: #A47864;*/
+}
+
+h1 {
+    font-family: "Roboto Mono", Calibri, Tahoma, sans-serif;
+    /*color: #FFDD44;*/
+}
+
+p {
+    font-family: "Roboto Mono", Calibri, Tahoma, sans-serif;
+    /*color: #FFFFFF;*/
+}
+
+.animatedbutton {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0;
+}
+
+.animatedbutton:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.animatedbutton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.greenbutton {
+    border: none;
+    font-size: 28px;
+    width: 200px;
+    height: 72px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin: 0;
+}
+
+.greenbutton:hover {
+    border: none;
+    font-size: 28px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+    height: 72px;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.bluebutton {
+    border: none;
+    font-size: 28px;
+    width: 200px;
+    height: 72px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin: 0;
+}
+
+.bluebutton:hover {
+    border: none;
+    font-size: 28px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+    height: 72px;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #008CBA;
+    color: white;
+}
+
+.animatebgbutton {
+    border: none;
+    font-size: 28px;
+    width: 200px;
+    height: 72px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin: 0;
+}
+
+.animatebgbutton:hover {
+    border: none;
+    font-size: 28px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+    height: 72px;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+    padding: 10px 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    /*grid-gap: 10px;
+    padding: 20px;*/
+}
+
+@keyframes cycleColors {
+    0% {
+        background-color: #FF6347; /* Tomato Red */
+    }
+    25% {
+        background-color: #FFDD44; /* Yellow */
+    }
+    50% {
+        background-color: #4CAF50; /* Green */
+    }
+    75% {
+        background-color: #008CBA; /* Blue */
+    }
+    100% {
+        background-color: #F44336; /* Red */
+    }
+}
+
+.animate-background {
+    animation: cycleColors 10s infinite;
+    background-color: ##FF6347;
+}
